@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Κυνήγι Θησαυρού – Αρκάδι</title>
+
+    <title>Αρκάδι 1866 - Διαδικτυακό Κυνήγι Θησαυρού</title>
 
     <style>
         * {
@@ -15,39 +16,59 @@
             min-height: 100vh;
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #1b1b1b, #4a3424);
+            color: white;
+
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+
+            text-align: center;
         }
 
         .container {
-            text-align: center;
-            max-width: 700px;
-            padding: 50px 25px;
+            width: 100%;
+            max-width: 1100px;
+            padding: 50px 30px;
         }
 
-        h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
+        .title {
+            font-size: clamp(60px, 9vw, 110px);
+            font-weight: 900;
+            letter-spacing: 8px;
+            margin: 0 0 25px 0;
+            color: #d6a84f;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
         }
 
-        p {
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 35px;
+        .subtitle {
+            font-size: clamp(22px, 3vw, 38px);
+            font-weight: 700;
+            letter-spacing: 5px;
+            white-space: nowrap;
+            margin-bottom: 45px;
+        }
+
+        .description {
+            font-size: 21px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 45px auto;
         }
 
         .button {
             display: inline-block;
-            padding: 18px 40px;
+            padding: 20px 50px;
+
             background: #d6a84f;
             color: #1b1b1b;
+
             text-decoration: none;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: bold;
-            border-radius: 12px;
-            transition: 0.2s;
+
+            border-radius: 14px;
+
+            transition: transform 0.2s, background 0.2s;
         }
 
         .button:hover {
@@ -56,9 +77,38 @@
         }
 
         .footer {
-            margin-top: 50px;
+            margin-top: 55px;
             font-size: 14px;
-            opacity: 0.7;
+            opacity: 0.6;
+        }
+
+        /* Κινητά */
+        @media (max-width: 700px) {
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .title {
+                font-size: 55px;
+                letter-spacing: 4px;
+            }
+
+            .subtitle {
+                white-space: normal;
+                font-size: 22px;
+                letter-spacing: 3px;
+                line-height: 1.5;
+            }
+
+            .description {
+                font-size: 18px;
+            }
+
+            .button {
+                font-size: 20px;
+                padding: 18px 30px;
+            }
         }
     </style>
 </head>
@@ -67,10 +117,13 @@
 
     <div class="container">
 
-        <h1>🏛️ Διαδικτυακό Κυνήγι Θησαυρού</h1>
+        <h1 class="title">ΑΡΚΑΔΙ 1866</h1>
 
-        <p>
-            <strong>Αρκάδι</strong><br>
+        <div class="subtitle">
+            ΔΙΑΔΙΚΤΥΑΚΟ&nbsp;&nbsp;ΚΥΝΗΓΙ&nbsp;&nbsp;ΘΗΣΑΥΡΟΥ
+        </div>
+
+        <p class="description">
             Μια διαδραστική αποστολή γεμάτη γρίφους,
             πληροφορίες και προκλήσεις.
         </p>
